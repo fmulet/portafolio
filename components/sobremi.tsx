@@ -10,7 +10,7 @@ export const SobreMi = () => {
       <div className='grid md:gap-5 md:grid-cols-2 py-10 items-center'>
         <div>
           <h2 className='font-bold text-5xl mb-5'>Bienvenido(a)</h2>
-          <p>
+          <p className='mb-10'>
             Soy Francisco Mulet, Desarrollador Full Stack. Me apasiona
             transformar ideas en aplicaciones web y móviles de alta calidad. A
             lo largo de mi carrera, he colaborado en la creación de sitios web
@@ -24,7 +24,7 @@ export const SobreMi = () => {
               'https://drive.google.com/file/d/1tyJ1en2bKKv_ecZQCtQ12DpebgSGL8tW/view?usp=drive_link'
             }
             target='_blank'
-            className='bg-black border-2 border-black hover:bg-white text-white hover:text-black  transition duration-300 font-bold py-2 px-4 rounded-full my-5'
+            className='bg-black border-2 border-black hover:bg-white text-white hover:text-black  transition duration-300 font-bold py-2 px-4 rounded-full mb-5'
           >
             Currículum
           </Link>
