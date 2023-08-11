@@ -31,7 +31,7 @@ export const Proyectos = () => {
             link='https://www.emisocapropiedades.cl/'
             github='https://github.com/fmulet/emisocapropiedades'
             columns='grid-cols-3'
-            childre={[
+            children={[
               <>
                 <Etiqueta
                   texto={'Next JS'}
@@ -71,7 +71,7 @@ export const Proyectos = () => {
             columns='grid-cols-3'
             link='https://www.gruposingular.cl/'
             github='#'
-            childre={[
+            children={[
               <>
                 <Etiqueta
                   texto={'Next JS'}
@@ -111,7 +111,7 @@ export const Proyectos = () => {
             columns='grid-cols-3'
             link='https://elviajedelemprendedor.gruposingular.cl'
             github='#'
-            childre={[
+            children={[
               <>
                 <Etiqueta
                   texto={'HTML5'}
