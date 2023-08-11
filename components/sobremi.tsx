@@ -9,7 +9,9 @@ export const SobreMi = () => {
     >
       <div className='grid md:gap-5 md:grid-cols-2 py-10 items-center'>
         <div>
-          <h2 className='font-bold text-5xl mb-5'>Bienvenido(a)</h2>
+          <h2 className='font-bold max-[345px]:text-4xl text-5xl mb-5'>
+            Bienvenido(a)
+          </h2>
           <p className='mb-10'>
             Soy Francisco Mulet, Desarrollador Full Stack. Me apasiona
             transformar ideas en aplicaciones web y móviles de alta calidad. A

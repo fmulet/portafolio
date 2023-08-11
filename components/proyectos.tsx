@@ -14,7 +14,7 @@ export const Proyectos = () => {
     >
       <div className='grid md:gap-5 py-10 items-center'>
         <div>
-          <h2 className='text-left font-bold text-[35px] lg:text-5xl mb-10'>
+          <h2 className='max-[345px]:text-2xl text-left font-bold text-[35px] lg:text-5xl mb-10'>
             Proyectos Recientes
           </h2>
         </div>

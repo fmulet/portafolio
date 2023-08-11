@@ -1,20 +1,7 @@
 import {
-  BiLogoCss3,
-  BiLogoDocker,
-  BiLogoFlutter,
-  BiLogoGit,
-  BiLogoGithub,
-  BiLogoGraphql,
-  BiLogoHtml5,
-  BiLogoJava,
-  BiLogoJavascript,
-  BiLogoMongodb,
-  BiLogoReact,
-  BiLogoSpringBoot,
-  BiLogoTailwindCss,
-  BiLogoTypescript,
-  BiLogoVisualStudio,
-  BiLogoWordpress,
+    BiLogoCss3, BiLogoDocker, BiLogoFlutter, BiLogoGit, BiLogoGithub, BiLogoGraphql, BiLogoHtml5,
+    BiLogoJava, BiLogoJavascript, BiLogoMongodb, BiLogoReact, BiLogoSpringBoot, BiLogoTailwindCss,
+    BiLogoTypescript, BiLogoVisualStudio, BiLogoWordpress
 } from 'react-icons/bi';
 import { SiDart, SiMysql, SiNestjs, SiNextdotjs } from 'react-icons/si';
 
@@ -26,7 +13,9 @@ export const Skills = () => {
     >
       <div className='py-10 items-center'>
         <div>
-          <h2 className='font-bold text-5xl mb-10'>Skills</h2>
+          <h2 className='font-bold max-[345px]:text-4xl text-5xl mb-10'>
+            Skills
+          </h2>
           <p className='text-2xl my-10'>Lenguajes</p>
           <div className='grid grid-cols-3 lg:grid-cols-7 lg:gap-8'>
             <BiLogoHtml5

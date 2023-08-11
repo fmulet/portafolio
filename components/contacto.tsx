@@ -9,7 +9,9 @@ export const Contacto = () => {
     >
       <div className='grid py-10 items-center'>
         <div>
-          <h2 className='font-bold text-5xl mb-5'>Contacto</h2>
+          <h2 className='font-bold max-[345px]:text-4xl text-5xl mb-5'>
+            Contacto
+          </h2>
         </div>
         <div className='grid'>
           <p className='text-2xl my-10'>Más información</p>

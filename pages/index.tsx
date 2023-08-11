@@ -1,6 +1,7 @@
 import { Inter } from 'next/font/google';
 
 import { Contacto } from '@/components/contacto';
+import { Footer } from '@/components/footer';
 import Layout from '@/components/layout';
 import { Proyectos } from '@/components/proyectos';
 import { Skills } from '@/components/skills';
@@ -16,6 +17,7 @@ export default function Home() {
         <Proyectos />
         <Skills />
         <Contacto />
+        <Footer />
       </div>
     </Layout>
   );

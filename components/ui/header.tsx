@@ -10,14 +10,16 @@ export default function Header() {
 
   return (
     <header id='start'>
-      <nav className='flex items-center justify-between py-8 px-16 mx-auto flex-wrap lg:mx-16'>
+      <nav className='flex items-center justify-between py-8 max-[345px]:px-5 px-16 mx-auto flex-wrap lg:mx-16'>
         <div className='flex lg:items-center lg:space-x-2'>
           <Link
             href='/'
             className='hover:text-gray-600 transition duration-300'
           >
-            <div className='max-[280px]:w-20 w-32 md:w-48'>
-              <h1 className='text-2xl font-bold'>Francisco Mulet</h1>
+            <div className=' w-32 md:w-48'>
+              <h1 className=' max-[345px]:text-base text-2xl font-bold'>
+                Francisco Mulet
+              </h1>
             </div>
           </Link>
         </div>
