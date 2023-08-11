@@ -14,7 +14,7 @@ export const Proyectos = () => {
         </div>
         <div className='grid mx-auto lg:grid-cols-3 gap-10'>
           <CardProyecto
-            image='emisoca.avif'
+            image='/emisoca.jpg'
             titulo='Emisoca Propiedades'
             descripcion='Desarrollo Web para la empresa inmobiliaria Emisoca Propiedades'
             tamano='text-xl'
@@ -54,7 +54,7 @@ export const Proyectos = () => {
             // ]}
           />
           <CardProyecto
-            image='singular.avif'
+            image='/singular.jpg'
             titulo='Grupo Singular'
             descripcion='Desarrollo Web para la empresa consultora Grupo Singular'
             tamano='text-xl'
@@ -94,7 +94,7 @@ export const Proyectos = () => {
             // ]}
           />
           <CardProyecto
-            image='emprendedor.avif'
+            image='/emprendedor.jpg'
             titulo='El Viaje del Emprendedor'
             descripcion='Desarrollo Web plataforma educativa El Viaje del Emprendedor para la empresa Grupo Singular'
             tamano='text-xl'
