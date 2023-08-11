@@ -59,6 +59,7 @@ export default function CardProyecto({
           <Link
             href={github}
             className='bg-black border-2 text-center border-black hover:bg-white text-white hover:text-black  transition duration-300 font-bold py-2 px-4 rounded-full'
+            target='_blank'
           >
             Github
           </Link>
@@ -66,6 +67,7 @@ export default function CardProyecto({
         {link !== '#' && (
           <Link
             href={link}
+            target='_blank'
             className='bg-black border-2 border-black hover:bg-white text-white text-center hover:text-black  transition duration-300 font-bold py-2 px-4 rounded-full'
           >
             Link
