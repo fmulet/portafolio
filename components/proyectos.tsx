@@ -1,4 +1,10 @@
+import {
+    BiLogoCss3, BiLogoHtml5, BiLogoJavascript, BiLogoTypescript, BiLogoWordpress
+} from 'react-icons/bi';
+import { SiNextdotjs, SiTailwindcss } from 'react-icons/si';
+
 import CardProyecto from './ui/cardProyecto';
+import { Etiqueta } from './ui/etiqueta';
 
 export const Proyectos = () => {
   return (
@@ -13,6 +19,7 @@ export const Proyectos = () => {
           </h2>
         </div>
         <div className='grid mx-auto lg:grid-cols-3 gap-10'>
+          {' '}
           <CardProyecto
             image='/emisoca.jpg'
             titulo='Emisoca Propiedades'
@@ -20,130 +27,92 @@ export const Proyectos = () => {
             tamano='text-xl'
             link='https://www.emisocapropiedades.cl/'
             github='https://github.com/fmulet/emisocapropiedades'
-            columns='grid-cols-3'
-            // children={[
-            //   <>
-            //     <Etiqueta
-            //       texto={'Next JS'}
-            //       children={
-            //         <SiNextdotjs
-            //           className='text-black mr-1'
-            //           size={20}
-            //         />
-            //       }
-            //     />
-            //     <Etiqueta
-            //       texto={'Tailwind'}
-            //       children={
-            //         <SiTailwindcss
-            //           className='text-black mr-1'
-            //           size={20}
-            //         />
-            //       }
-            //     />
-            //     <Etiqueta
-            //       texto={'Typescript'}
-            //       children={
-            //         <BiLogoTypescript
-            //           className='text-black mr-1'
-            //           size={20}
-            //         />
-            //       }
-            //     />
-            //   </>,
-            // ]}
-          />
+          >
+            <Etiqueta texto={'Next JS'}>
+              <SiNextdotjs
+                className='text-black mr-1'
+                size={20}
+              />
+            </Etiqueta>
+            <Etiqueta texto={'Tailwind'}>
+              <SiTailwindcss
+                className='text-black mr-1'
+                size={20}
+              />
+            </Etiqueta>
+            <Etiqueta texto={'Typescript'}>
+              <BiLogoTypescript
+                className='text-black mr-1'
+                size={20}
+              />
+            </Etiqueta>
+          </CardProyecto>
           <CardProyecto
             image='/singular.jpg'
             titulo='Grupo Singular'
             descripcion='Desarrollo Web para la empresa consultora Grupo Singular'
             tamano='text-xl'
-            columns='grid-cols-3'
             link='https://www.gruposingular.cl/'
             github='#'
-            // children={[
-            //   <>
-            //     <Etiqueta
-            //       texto={'Next JS'}
-            //       children={
-            //         <SiNextdotjs
-            //           className='text-black mr-1'
-            //           size={20}
-            //         />
-            //       }
-            //     />
-            //     <Etiqueta
-            //       texto={'Tailwind'}
-            //       children={
-            //         <SiTailwindcss
-            //           className='text-black mr-1'
-            //           size={20}
-            //         />
-            //       }
-            //     />
-            //     <Etiqueta
-            //       texto={'Typescript'}
-            //       children={
-            //         <BiLogoTypescript
-            //           className='text-black mr-1'
-            //           size={20}
-            //         />
-            //       }
-            //     />
-            //   </>,
-            // ]}
-          />
+          >
+            <Etiqueta texto={'Next JS'}>
+              {' '}
+              <SiNextdotjs
+                className='text-black mr-1'
+                size={20}
+              />
+            </Etiqueta>
+            <Etiqueta texto={'Tailwind'}>
+              <SiTailwindcss
+                className='text-black mr-1'
+                size={20}
+              />
+            </Etiqueta>
+
+            <Etiqueta texto={'Typescript'}>
+              <BiLogoTypescript
+                className='text-black mr-1'
+                size={20}
+              />
+            </Etiqueta>
+          </CardProyecto>
           <CardProyecto
             image='/emprendedor.jpg'
             titulo='El Viaje del Emprendedor'
             descripcion='Desarrollo Web plataforma educativa El Viaje del Emprendedor para la empresa Grupo Singular'
             tamano='text-xl'
-            columns='grid-cols-3'
             link='https://elviajedelemprendedor.gruposingular.cl'
             github='#'
-            // children={[
-            //   <>
-            //     <Etiqueta
-            //       texto={'HTML5'}
-            //       children={
-            //         <BiLogoHtml5
-            //           className='text-black mr-1'
-            //           size={20}
-            //         />
-            //       }
-            //     />
-            //     <Etiqueta
-            //       texto={'CSS3'}
-            //       children={
-            //         <BiLogoCss3
-            //           className='text-black mr-1'
-            //           size={20}
-            //         />
-            //       }
-            //     />
-            //     <Etiqueta
-            //       texto={'Javascript'}
-            //       children={
-            //         <BiLogoJavascript
-            //           className='text-black mr-1'
-            //           size={20}
-            //         />
-            //       }
-            //     />
-            //     <div className='col-start-2 col-end-3'>
-            //       <Etiqueta
-            //         texto={'Wordpress'}
-            //         children={
-            //           <BiLogoWordpress
-            //             className='text-black mr-1'
-            //             size={20}
-            //           />
-            //         }
-            //       />
-            //     </div>
-            //   </>,
-            // ]}
-          />
+          >
+            <Etiqueta texto={'HTML5'}>
+              <BiLogoHtml5
+                className='text-black mr-1'
+                size={20}
+              />
+            </Etiqueta>
+
+            <Etiqueta texto={'CSS3'}>
+              <BiLogoCss3
+                className='text-black mr-1'
+                size={20}
+              />
+            </Etiqueta>
+
+            <Etiqueta texto={'Javascript'}>
+              <BiLogoJavascript
+                className='text-black mr-1'
+                size={20}
+              />
+            </Etiqueta>
+            <div className='col-start-2 col-end-3'>
+              <Etiqueta texto={'Wordpress'}>
+                <BiLogoWordpress
+                  className='text-black mr-1'
+                  size={20}
+                />
+              </Etiqueta>
+            </div>
+          </CardProyecto>
         </div>
       </div>
     </div>

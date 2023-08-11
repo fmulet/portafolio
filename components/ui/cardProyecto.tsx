@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { PropsWithChildren } from 'react';
+import { ReactNode } from 'react';
 
 interface Props {
   image: string;
@@ -9,9 +9,9 @@ interface Props {
   className?: string;
   descripcion: string;
   py?: string;
-  columns?: string;
   link: string;
   github: string;
+  children: ReactNode;
 }
 
 export default function CardProyecto({
@@ -20,13 +20,12 @@ export default function CardProyecto({
   tamano,
   descripcion,
   className,
-  children,
-  columns,
   link,
   github,
-}: PropsWithChildren<Props>) {
+  children,
+}: Props) {
   return (
-    <div className={` rounded-2xl overflow-hidden shadow-lg bg-yellow`}>
+    <div className={` rounded-2xl overflow-hidden shadow-lg`}>
       <Image
         src={image}
         alt={`Imagen ${titulo}`}
@@ -47,7 +46,8 @@ export default function CardProyecto({
           {descripcion}
         </span>
       </div>
-      <div className={`grid ${columns} gap-1`}>{children}</div>
+      <div className={`grid grid-cols-3 gap-1`}>{children}</div>
+
       <div
         className={`grid py-3 px-10 ${
           github === '#' || link === '#'
