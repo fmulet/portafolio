@@ -9,7 +9,7 @@ interface Props {
   className?: string;
   descripcion: string;
   py?: string;
-  children?: ReactNode;
+  childre?: ReactNode;
   columns?: string;
   link: string;
   github: string;
@@ -21,7 +21,7 @@ export default function CardProyecto({
   tamano,
   descripcion,
   className,
-  children,
+  childre,
   columns,
   link,
   github,
@@ -48,7 +48,7 @@ export default function CardProyecto({
           {descripcion}
         </span>
       </div>
-      <div className={`grid ${columns} gap-1`}>{children}</div>
+      <div className={`grid ${columns} gap-1`}>{childre}</div>
       <div
         className={`grid py-3 px-10 ${
           github === '#' || link === '#'
