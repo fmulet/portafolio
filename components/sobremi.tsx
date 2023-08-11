@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const SobreMi = () => {
   return (
@@ -18,9 +19,15 @@ export const SobreMi = () => {
             efectivas y enfrentar cada desafío técnico con entusiasmo y
             dedicación.
           </p>
-          <button className='bg-black border-2 border-black hover:bg-white text-white hover:text-black  transition duration-300 font-bold py-2 px-4 rounded-full my-5'>
+          <Link
+            href={
+              'https://drive.google.com/file/d/1tyJ1en2bKKv_ecZQCtQ12DpebgSGL8tW/view?usp=drive_link'
+            }
+            target='_blank'
+            className='bg-black border-2 border-black hover:bg-white text-white hover:text-black  transition duration-300 font-bold py-2 px-4 rounded-full my-5'
+          >
             Currículum
-          </button>
+          </Link>
         </div>
         <div>
           <Image

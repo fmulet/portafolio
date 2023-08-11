@@ -5,10 +5,6 @@ import Header from '@/components/ui/header';
 
 import ButtonUp from './ui/buttonup';
 
-// import ButtonUp from '@/components/ui/buttonup';
-
-// import Footer from './footer';
-
 export default function Layout({
   children,
   title,
