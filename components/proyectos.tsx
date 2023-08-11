@@ -1,14 +1,4 @@
-import {
-  BiLogoCss3,
-  BiLogoHtml5,
-  BiLogoJavascript,
-  BiLogoTypescript,
-  BiLogoWordpress,
-} from 'react-icons/bi';
-import { SiNextdotjs, SiTailwindcss } from 'react-icons/si';
-
 import CardProyecto from './ui/cardProyecto';
-import { Etiqueta } from './ui/etiqueta';
 
 export const Proyectos = () => {
   return (
@@ -31,37 +21,37 @@ export const Proyectos = () => {
             link='https://www.emisocapropiedades.cl/'
             github='https://github.com/fmulet/emisocapropiedades'
             columns='grid-cols-3'
-            children={[
-              <>
-                <Etiqueta
-                  texto={'Next JS'}
-                  children={
-                    <SiNextdotjs
-                      className='text-black mr-1'
-                      size={20}
-                    />
-                  }
-                />
-                <Etiqueta
-                  texto={'Tailwind'}
-                  children={
-                    <SiTailwindcss
-                      className='text-black mr-1'
-                      size={20}
-                    />
-                  }
-                />
-                <Etiqueta
-                  texto={'Typescript'}
-                  children={
-                    <BiLogoTypescript
-                      className='text-black mr-1'
-                      size={20}
-                    />
-                  }
-                />
-              </>,
-            ]}
+            // children={[
+            //   <>
+            //     <Etiqueta
+            //       texto={'Next JS'}
+            //       children={
+            //         <SiNextdotjs
+            //           className='text-black mr-1'
+            //           size={20}
+            //         />
+            //       }
+            //     />
+            //     <Etiqueta
+            //       texto={'Tailwind'}
+            //       children={
+            //         <SiTailwindcss
+            //           className='text-black mr-1'
+            //           size={20}
+            //         />
+            //       }
+            //     />
+            //     <Etiqueta
+            //       texto={'Typescript'}
+            //       children={
+            //         <BiLogoTypescript
+            //           className='text-black mr-1'
+            //           size={20}
+            //         />
+            //       }
+            //     />
+            //   </>,
+            // ]}
           />
           <CardProyecto
             image='/singular.avif'
@@ -71,37 +61,37 @@ export const Proyectos = () => {
             columns='grid-cols-3'
             link='https://www.gruposingular.cl/'
             github='#'
-            children={[
-              <>
-                <Etiqueta
-                  texto={'Next JS'}
-                  children={
-                    <SiNextdotjs
-                      className='text-black mr-1'
-                      size={20}
-                    />
-                  }
-                />
-                <Etiqueta
-                  texto={'Tailwind'}
-                  children={
-                    <SiTailwindcss
-                      className='text-black mr-1'
-                      size={20}
-                    />
-                  }
-                />
-                <Etiqueta
-                  texto={'Typescript'}
-                  children={
-                    <BiLogoTypescript
-                      className='text-black mr-1'
-                      size={20}
-                    />
-                  }
-                />
-              </>,
-            ]}
+            // children={[
+            //   <>
+            //     <Etiqueta
+            //       texto={'Next JS'}
+            //       children={
+            //         <SiNextdotjs
+            //           className='text-black mr-1'
+            //           size={20}
+            //         />
+            //       }
+            //     />
+            //     <Etiqueta
+            //       texto={'Tailwind'}
+            //       children={
+            //         <SiTailwindcss
+            //           className='text-black mr-1'
+            //           size={20}
+            //         />
+            //       }
+            //     />
+            //     <Etiqueta
+            //       texto={'Typescript'}
+            //       children={
+            //         <BiLogoTypescript
+            //           className='text-black mr-1'
+            //           size={20}
+            //         />
+            //       }
+            //     />
+            //   </>,
+            // ]}
           />
           <CardProyecto
             image='/emprendedor.avif'
@@ -111,48 +101,48 @@ export const Proyectos = () => {
             columns='grid-cols-3'
             link='https://elviajedelemprendedor.gruposingular.cl'
             github='#'
-            children={[
-              <>
-                <Etiqueta
-                  texto={'HTML5'}
-                  children={
-                    <BiLogoHtml5
-                      className='text-black mr-1'
-                      size={20}
-                    />
-                  }
-                />
-                <Etiqueta
-                  texto={'CSS3'}
-                  children={
-                    <BiLogoCss3
-                      className='text-black mr-1'
-                      size={20}
-                    />
-                  }
-                />
-                <Etiqueta
-                  texto={'Javascript'}
-                  children={
-                    <BiLogoJavascript
-                      className='text-black mr-1'
-                      size={20}
-                    />
-                  }
-                />
-                <div className='col-start-2 col-end-3'>
-                  <Etiqueta
-                    texto={'Wordpress'}
-                    children={
-                      <BiLogoWordpress
-                        className='text-black mr-1'
-                        size={20}
-                      />
-                    }
-                  />
-                </div>
-              </>,
-            ]}
+            // children={[
+            //   <>
+            //     <Etiqueta
+            //       texto={'HTML5'}
+            //       children={
+            //         <BiLogoHtml5
+            //           className='text-black mr-1'
+            //           size={20}
+            //         />
+            //       }
+            //     />
+            //     <Etiqueta
+            //       texto={'CSS3'}
+            //       children={
+            //         <BiLogoCss3
+            //           className='text-black mr-1'
+            //           size={20}
+            //         />
+            //       }
+            //     />
+            //     <Etiqueta
+            //       texto={'Javascript'}
+            //       children={
+            //         <BiLogoJavascript
+            //           className='text-black mr-1'
+            //           size={20}
+            //         />
+            //       }
+            //     />
+            //     <div className='col-start-2 col-end-3'>
+            //       <Etiqueta
+            //         texto={'Wordpress'}
+            //         children={
+            //           <BiLogoWordpress
+            //             className='text-black mr-1'
+            //             size={20}
+            //           />
+            //         }
+            //       />
+            //     </div>
+            //   </>,
+            // ]}
           />
         </div>
       </div>
