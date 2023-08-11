@@ -31,7 +31,7 @@ export const Proyectos = () => {
             link='https://www.emisocapropiedades.cl/'
             github='https://github.com/fmulet/emisocapropiedades'
             columns='grid-cols-3'
-            children={
+            children={[
               <>
                 <Etiqueta
                   texto={'Next JS'}
@@ -60,8 +60,8 @@ export const Proyectos = () => {
                     />
                   }
                 />
-              </>
-            }
+              </>,
+            ]}
           />
           <CardProyecto
             image='/singular.avif'
@@ -71,7 +71,7 @@ export const Proyectos = () => {
             columns='grid-cols-3'
             link='https://www.gruposingular.cl/'
             github='#'
-            children={
+            children={[
               <>
                 <Etiqueta
                   texto={'Next JS'}
@@ -100,8 +100,8 @@ export const Proyectos = () => {
                     />
                   }
                 />
-              </>
-            }
+              </>,
+            ]}
           />
           <CardProyecto
             image='/emprendedor.avif'
@@ -111,7 +111,7 @@ export const Proyectos = () => {
             columns='grid-cols-3'
             link='https://elviajedelemprendedor.gruposingular.cl'
             github='#'
-            children={
+            children={[
               <>
                 <Etiqueta
                   texto={'HTML5'}
@@ -151,8 +151,8 @@ export const Proyectos = () => {
                     }
                   />
                 </div>
-              </>
-            }
+              </>,
+            ]}
           />
         </div>
       </div>
