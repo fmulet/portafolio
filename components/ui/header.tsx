@@ -26,6 +26,7 @@ export default function Header() {
         <button
           className='inline-flex p-3 rounded lg:hidden ml-auto text-yellow outline-none hover:text-gray-700'
           onClick={handleClick}
+          aria-label='Boton Menu'
         >
           <svg
             className='w-6 h-6'
