@@ -25,12 +25,12 @@ export default function CardProyecto({
   children,
 }: Props) {
   return (
-    <div className={` rounded-2xl overflow-hidden shadow-lg`}>
+    <div className={'rounded-2xl overflow-hidden shadow-lg'}>
       <Image
         src={image}
         alt={`Imagen ${titulo}`}
-        width={350}
-        height={197}
+        width={384}
+        height={286}
         objectFit='contain'
         className='w-full h-72 transition delay-150 duration-300 ease-in-out transform hover:scale-110'
       />
