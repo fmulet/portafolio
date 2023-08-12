@@ -102,7 +102,7 @@ export const Proyectos = () => {
               />
             </Etiqueta>
 
-            <Etiqueta texto={'Javascript'}>
+            <Etiqueta texto={'JavaScript'}>
               <BiLogoJavascript
                 className='text-black mr-1'
                 size={20}
