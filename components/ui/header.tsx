@@ -48,37 +48,42 @@ export default function Header() {
           } flex flex-col font-medium w-full lg:inline-flex lg:flex-row lg:w-auto lg:items-center lg:justify-center lg:space-x-12`}
         >
           <ul className='flex flex-col font-medium lg:flex-row lg:space-x-20'>
-            <Link
-              href='/#sobremi'
-              scroll={false}
-              className='mt-5 lg:mt-0 hover:text-gray-600 transition duration-300'
-            >
-              Sobre Mi
-            </Link>
-
-            <Link
-              href='/#proyectos'
-              scroll={false}
-              className='mt-5 lg:mt-0 hover:text-gray-600 transition duration-300'
-            >
-              Proyectos Recientes
-            </Link>
-
-            <Link
-              href='/#skills'
-              scroll={false}
-              className='mt-5 lg:mt-0 hover:text-gray-600 transition duration-300'
-            >
-              Skills
-            </Link>
-
-            <Link
-              href='#contacto'
-              scroll={false}
-              className='mt-5 lg:mt-0 hover:text-gray-700 transition duration-300'
-            >
-              Contacto
-            </Link>
+            <li className='mt-5 lg:mt-0'>
+              <Link
+                href='/#sobremi'
+                scroll={false}
+                className='hover:text-gray-600 transition duration-300'
+              >
+                Sobre Mí
+              </Link>
+            </li>
+            <li className='mt-5 lg:mt-0'>
+              <Link
+                href='/#proyectos'
+                scroll={false}
+                className='hover:text-gray-600 transition duration-300'
+              >
+                Proyectos Recientes
+              </Link>
+            </li>
+            <li className='mt-5 lg:mt-0'>
+              <Link
+                href='/#skills'
+                scroll={false}
+                className='mt-5 lg:mt-0 hover:text-gray-600 transition duration-300'
+              >
+                Skills
+              </Link>
+            </li>
+            <li className='mt-5 lg:mt-0'>
+              <Link
+                href='#contacto'
+                scroll={false}
+                className='hover:text-gray-700 transition duration-300'
+              >
+                Contacto
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
