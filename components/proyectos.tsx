@@ -18,7 +18,7 @@ export const Proyectos = () => {
             Proyectos Recientes
           </h2>
         </div>
-        <div className='grid mx-auto lg:grid-cols-3 gap-10'>
+        <div className='grid mx-auto md:grid-cols-2 lg:grid-cols-3 gap-10'>
           {' '}
           <CardProyecto
             image='/emisoca.jpg'

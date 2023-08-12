@@ -1,12 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { ReactNode } from 'react';
+import { Children, ReactNode } from 'react';
 
 interface Props {
   image: string;
   titulo: string;
   tamano: string;
-  className?: string;
   descripcion: string;
   py?: string;
   link: string;
@@ -17,44 +16,41 @@ interface Props {
 export default function CardProyecto({
   image,
   titulo,
-  tamano,
   descripcion,
-  className,
   link,
   github,
   children,
 }: Props) {
+  const childrenArray = Children.toArray(children);
+  const isOdd = childrenArray.length % 2 !== 0;
+
   return (
-    <div className={'rounded-2xl overflow-hidden shadow-lg'}>
+    <div className='max-w-sm rounded overflow-hidden shadow-lg'>
       <Image
         src={image}
         alt={`Imagen ${titulo}`}
-        width={384}
-        height={286}
+        width={350}
+        height={0}
         objectFit='contain'
-        className='w-full h-72 transition delay-150 duration-300 ease-in-out transform hover:scale-110'
+        className='w-full transition delay-150 duration-300 ease-in-out transform hover:scale-110'
       />
-
-      <div className={`${className} justify-center my-3 text-center`}>
-        <p
-          className={`text-black rounded-full ${tamano} inline-flex font-bold`}
-        >
-          {titulo}
-        </p>
+      <div className='px-6 py-4'>
+        <p className='text-gray-700 text-base'>{descripcion}</p>
       </div>
-      <div className={`${className} justify-center my-3 text-center`}>
-        <span className='text-black rounded-full inline-flex'>
-          {descripcion}
-        </span>
+      <div className='grid grid-cols-2 gap-1'>
+        {childrenArray.slice(0, isOdd ? -1 : undefined).map((child) => child)}
       </div>
-      <div className={`grid grid-cols-3 gap-1`}>{children}</div>
-
+      {isOdd && (
+        <div className='flex justify-center'>
+          {childrenArray[childrenArray.length - 1]}
+        </div>
+      )}
       <div
         className={`grid py-3 px-10 ${
           github === '#' || link === '#'
             ? 'grid-cols-1 justify-center'
-            : 'grid-cols-2 gap-3 '
-        }  `}
+            : 'grid-cols-2 gap-3'
+        }`}
       >
         {github !== '#' && (
           <Link
