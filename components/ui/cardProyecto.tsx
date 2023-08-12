@@ -30,10 +30,11 @@ export default function CardProyecto({
         src={image}
         alt={`Imagen ${titulo}`}
         width={350}
-        height={0}
+        height={197}
         objectFit='contain'
         className='w-full h-72 transition delay-150 duration-300 ease-in-out transform hover:scale-110'
       />
+
       <div className={`${className} justify-center my-3 text-center`}>
         <p
           className={`text-black rounded-full ${tamano} inline-flex font-bold`}
