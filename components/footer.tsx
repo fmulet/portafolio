@@ -3,8 +3,8 @@ export const Footer = () => {
     <div className='flex my-10 md:mx-32 '>
       <p className='text-2xl'>
         Portafolio desarrollado con las tecnologías{' '}
-        <span className='font-bold'>Next JS</span> y{' '}
-        <span className='font-bold'>Tailwind CSS</span>.
+        <span className='font-bold'>Next JS con TypeScript</span> y
+        <span className='font-bold'> Tailwind CSS</span>.
       </p>
     </div>
   );

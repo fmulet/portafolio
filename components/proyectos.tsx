@@ -1,5 +1,9 @@
 import {
-    BiLogoCss3, BiLogoHtml5, BiLogoJavascript, BiLogoTypescript, BiLogoWordpress
+  BiLogoCss3,
+  BiLogoHtml5,
+  BiLogoJavascript,
+  BiLogoTypescript,
+  BiLogoWordpress,
 } from 'react-icons/bi';
 import { SiNextdotjs, SiTailwindcss } from 'react-icons/si';
 
@@ -23,7 +27,7 @@ export const Proyectos = () => {
           <CardProyecto
             image='/emisoca.jpg'
             titulo='Emisoca Propiedades'
-            descripcion='Desarrollo Web para la empresa inmobiliaria Emisoca Propiedades'
+            descripcion='Desarrollo Web para la empresa inmobiliaria Emisoca Propiedades.'
             tamano='text-xl'
             link='https://www.emisocapropiedades.cl/'
             github='https://github.com/fmulet/emisocapropiedades'
@@ -40,7 +44,7 @@ export const Proyectos = () => {
                 size={20}
               />
             </Etiqueta>
-            <Etiqueta texto={'Typescript'}>
+            <Etiqueta texto={'TypeScript'}>
               <BiLogoTypescript
                 className='text-black mr-1'
                 size={20}
@@ -50,7 +54,7 @@ export const Proyectos = () => {
           <CardProyecto
             image='/singular.jpg'
             titulo='Grupo Singular'
-            descripcion='Desarrollo Web para la empresa consultora Grupo Singular'
+            descripcion='Desarrollo Web para la empresa consultora Grupo Singular.'
             tamano='text-xl'
             link='https://www.gruposingular.cl/'
             github='#'
@@ -69,7 +73,7 @@ export const Proyectos = () => {
               />
             </Etiqueta>
 
-            <Etiqueta texto={'Typescript'}>
+            <Etiqueta texto={'TypeScript'}>
               <BiLogoTypescript
                 className='text-black mr-1'
                 size={20}
@@ -79,7 +83,7 @@ export const Proyectos = () => {
           <CardProyecto
             image='/emprendedor.jpg'
             titulo='El Viaje del Emprendedor'
-            descripcion='Desarrollo Web plataforma educativa El Viaje del Emprendedor para la empresa Grupo Singular'
+            descripcion='Desarrollo Web plataforma educativa El Viaje del Emprendedor para la empresa Grupo Singular.'
             tamano='text-xl'
             link='https://elviajedelemprendedor.gruposingular.cl'
             github='#'
