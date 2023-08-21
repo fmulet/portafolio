@@ -53,7 +53,7 @@ export default function Header() {
           </Link>
         </div>
         <button
-          className='inline-flex p-3 rounded lg:hidden ml-auto text-yellow outline-none hover:text-gray-700'
+          className='inline-flex p-3 rounded lg:hidden ml-auto text-black dark:text-white outline-none hover:text-black dark:hover:text-white transition duration-300'
           onClick={handleClick}
           aria-label='Boton Menu'
         >
@@ -82,7 +82,7 @@ export default function Header() {
               <Link
                 href='/#sobremi'
                 scroll={false}
-                className='hover:text-gray-600 transition duration-300'
+                className='hover:text-gray-600 dark:text-white transition duration-300'
               >
                 Sobre Mí
               </Link>
