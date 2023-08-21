@@ -27,7 +27,7 @@ export const SobreMi = () => {
                 'https://drive.google.com/file/d/1tyJ1en2bKKv_ecZQCtQ12DpebgSGL8tW/view?usp=drive_link'
               }
               target='_blank'
-              className=' bg-black border-2 border-black hover:bg-white text-white hover:text-black  transition duration-300 font-bold py-2 px-4 rounded-full mb-5'
+              className='dark:bg-white bg-black border-2 border-black dark:border-white dark:hover:bg-black hover:bg-white dark:text-black text-white hover:text-black dark:hover:text-white  transition duration-300 font-bold py-2 px-4 rounded-full mb-5'
             >
               Currículum
             </Link>

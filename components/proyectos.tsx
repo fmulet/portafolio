@@ -34,19 +34,19 @@ export const Proyectos = () => {
           >
             <Etiqueta texto={'Next JS'}>
               <SiNextdotjs
-                className='text-black mr-1'
+                className='text-black  mr-1'
                 size={20}
               />
             </Etiqueta>
             <Etiqueta texto={'Tailwind'}>
               <SiTailwindcss
-                className='text-black mr-1'
+                className='text-black  mr-1'
                 size={20}
               />
             </Etiqueta>
             <Etiqueta texto={'TypeScript'}>
               <BiLogoTypescript
-                className='text-black mr-1'
+                className='text-black  mr-1'
                 size={20}
               />
             </Etiqueta>
@@ -75,7 +75,7 @@ export const Proyectos = () => {
 
             <Etiqueta texto={'TypeScript'}>
               <BiLogoTypescript
-                className='text-black mr-1'
+                className='text-black  mr-1'
                 size={20}
               />
             </Etiqueta>
@@ -90,28 +90,28 @@ export const Proyectos = () => {
           >
             <Etiqueta texto={'HTML5'}>
               <BiLogoHtml5
-                className='text-black mr-1'
+                className='text-black  mr-1'
                 size={20}
               />
             </Etiqueta>
 
             <Etiqueta texto={'CSS3'}>
               <BiLogoCss3
-                className='text-black mr-1'
+                className='text-black  mr-1'
                 size={20}
               />
             </Etiqueta>
 
             <Etiqueta texto={'JavaScript'}>
               <BiLogoJavascript
-                className='text-black mr-1'
+                className='text-black  mr-1'
                 size={20}
               />
             </Etiqueta>
             <div className='col-start-2 col-end-3'>
               <Etiqueta texto={'Wordpress'}>
                 <BiLogoWordpress
-                  className='text-black mr-1'
+                  className='text-black  mr-1'
                   size={20}
                 />
               </Etiqueta>

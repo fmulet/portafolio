@@ -4,10 +4,10 @@ export default function Document() {
   return (
     <Html
       lang='en'
-      className='scroll-smooth'
+      className='scroll-smooth dark'
     >
       <Head />
-      <body className='mx-5 lg:mx-24'>
+      <body className='mx-5 lg:mx-24 dark:bg-black dark:text-white'>
         <Main />
         <NextScript />
       </body>

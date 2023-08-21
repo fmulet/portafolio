@@ -25,7 +25,7 @@ export default function CardProyecto({
   const isOdd = childrenArray.length % 2 !== 0;
 
   return (
-    <div className='max-w-sm rounded overflow-hidden shadow-lg'>
+    <div className='dark:bg-white max-w-sm rounded overflow-hidden shadow-lg'>
       <Image
         src={image}
         alt={`Imagen ${titulo}`}
@@ -55,7 +55,7 @@ export default function CardProyecto({
         {github !== '#' && (
           <Link
             href={github}
-            className='bg-black border-2 text-center border-black hover:bg-white text-white hover:text-black  transition duration-300 font-bold py-2 px-4 rounded-full'
+            className='bg-black  border-2 text-center  border-black hover:bg-white  text-white hover:text-black  transition duration-300 font-bold py-2 px-4 rounded-full'
             target='_blank'
           >
             Github
@@ -65,7 +65,7 @@ export default function CardProyecto({
           <Link
             href={link}
             target='_blank'
-            className='bg-black border-2 border-black hover:bg-white text-white text-center hover:text-black  transition duration-300 font-bold py-2 px-4 rounded-full'
+            className='bg-black border-2 border-black  hover:bg-white  text-white  text-center hover:text-black   transition duration-300 font-bold py-2 px-4 rounded-full'
           >
             Link
           </Link>

@@ -30,7 +30,7 @@ export default function ButtonUp() {
       onClick={handleScroll as any}
       className={`${
         !isVisible && 'hidden'
-      } w-14 h-14 bg-black text-white text-center font-bold text-lg leading-tight uppercase rounded-full flex items-center justify-center shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 transition duration-300 ease-in-out bottom-5 right-5 fixed z-10`}
+      } w-14 h-14 dark:bg-white bg-black text-white dark:text-black text-center font-bold text-lg leading-tight uppercase rounded-full flex items-center justify-center shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 transition duration-300 ease-in-out bottom-5 right-5 fixed z-10`}
     >
       &uarr;
     </Link>

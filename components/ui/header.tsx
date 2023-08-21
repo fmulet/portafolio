@@ -1,16 +1,45 @@
+import { useTheme } from 'next-themes';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { BsFillMoonFill, BsFillSunFill } from 'react-icons/bs';
 
 export default function Header() {
   const [active, setActive] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  const { systemTheme, theme, setTheme } = useTheme();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const handleClick = () => {
     setActive(!active);
   };
 
+  const renderThemeChanger = () => {
+    if (!mounted) return null;
+    const currentTheme = theme === 'system' ? systemTheme : theme;
+    if (currentTheme === 'dark') {
+      return (
+        <BsFillSunFill
+          size={25}
+          onClick={() => setTheme('light')}
+        />
+      );
+    } else {
+      return (
+        <BsFillMoonFill
+          size={25}
+          onClick={() => setTheme('dark')}
+        />
+      );
+    }
+  };
+
   return (
     <header id='start'>
-      <nav className='flex items-center justify-between py-8 max-[345px]:px-5 px-16 mx-auto flex-wrap lg:mx-16'>
+      <nav className='flex items-center justify-between py-8 max-[345px]:px-5 px-16 mx-auto flex-wrap '>
         <div className='flex lg:items-center lg:space-x-2'>
           <Link
             href='/'
@@ -84,6 +113,10 @@ export default function Header() {
               >
                 Contacto
               </Link>
+            </li>
+
+            <li className='mt-5 lg:mt-0 cursor-pointer'>
+              {renderThemeChanger()}
             </li>
           </ul>
         </div>

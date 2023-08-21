@@ -19,7 +19,7 @@ export const Contacto = () => {
             className='inline-block'
           >
             <BiLogoLinkedin
-              className='text-black'
+              className='text-black dark:text-white'
               size={100}
             />
             <span className='sr-only'>Perfil de LinkedIn</span>
@@ -35,7 +35,7 @@ export const Contacto = () => {
             className='inline-block'
           >
             <BiLogoGmail
-              className='text-black'
+              className='text-black dark:text-white'
               size={100}
             />
             <span className='sr-only'>Enviar correo a fmulete@gmail.com</span>
